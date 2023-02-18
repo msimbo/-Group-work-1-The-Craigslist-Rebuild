@@ -613,6 +613,22 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
