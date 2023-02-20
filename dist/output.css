@@ -625,6 +625,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -661,6 +665,14 @@ video {
   height: 2.25rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
+.h-44 {
+  height: 11rem;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -687,6 +699,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .list-none {
@@ -721,6 +737,10 @@ video {
 
 .self-center {
   align-self: center;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .whitespace-nowrap {
@@ -849,6 +869,10 @@ video {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .text-3xl {
