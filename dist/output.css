@@ -625,6 +625,10 @@ video {
   margin-top: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -699,6 +703,10 @@ video {
 
 .list-none {
   list-style-type: none;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -861,6 +869,22 @@ video {
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-3xl {
