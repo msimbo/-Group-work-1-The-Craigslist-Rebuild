@@ -14,10 +14,10 @@
 <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
         <a href="#" class="flex items-center">
-            <img src="https://1000logos.net/wp-content/uploads/2020/11/Craigslist-emblem-500x313.jpg" class="h-6 mr-3 sm:h-9" alt="Craigslist Logo" />
+            <a href="index.html"><img src="https://1000logos.net/wp-content/uploads/2020/11/Craigslist-emblem-500x313.jpg" class="h-6 mr-3 sm:h-9" alt="Craigslist Logo" /></a>
             <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Craigslist</span>
         </a>
-        <div class="hidden w-full md:block md:w-auto" id="navbar">
+        <div  class="hidden w-full md:block md:w-auto" id="navbar">
             <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <button class="rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0" >Create Posting</button>
@@ -35,3 +35,344 @@
         </div>
     </div>
 </nav>
+<main>
+    <p class=" p-2 underline-offset-8 text-2xl font-bold"> Community</p>
+
+    <div  class="container grid grid-cols-2 gap-2 ml-6 sm:grid-cols-4 md:grid-cols-6">
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Here's the news</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Nice view right!</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/3975590/pexels-photo-3975590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Light Reading</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/1261730/pexels-photo-1261730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">The Nature</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/4148965/pexels-photo-4148965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Forever</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/6146929/pexels-photo-6146929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">To School</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/4545158/pexels-photo-4545158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Family</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/4200824/pexels-photo-4200824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">New in Tech</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/6579100/pexels-photo-6579100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">New Dog</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/4498359/pexels-photo-4498359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Relax</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/3797402/pexels-photo-3797402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">In Group</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+        <div  x-data="{open: true}">
+            <div class="p-4 mx-2 rounded-lg border-gray-300 border-2">
+                <div  x-show="open">
+                    <img class="rounded w-48 h-48" src="https://images.pexels.com/photos/5302927/pexels-photo-5302927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                    <br>
+                    <div class="flex">
+                        <img class="w-6 h-4 pr-2" src="https://cdn-icons-png.flaticon.com/512/4744/4744824.png">
+                        <p class="text-sm font-bold pr-2">2-17-2023    |  </p>
+
+                        <img class="w-4 h-4" src="https://pic.onlinewebfonts.com/svg/img_56302.png">
+                        <p class="text-sm font-bold" >1223</p>
+                    </div>
+                    <p class="text-sky-500 text-2xl font-bold">Me and Her</p>
+                </div>
+                <div x-show="!open">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dolore esse itaque iusto mollitia nemo nisi obcaecati odit omnis, possimus quae quasi quibusdam quidem quisquam, similique velit voluptatem?
+                    </p>
+                </div>
+
+                <button @click="open= !open"  class="justify-end rounded-lg bg-blue-700 text-white border-2 mt-4 p-2">Read More</button>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</main>
+
+<!-- footer section-->
+
+<footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900 fixed bottom-0 w-full">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400 pl-3">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Feedback</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Settings</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Terms</a>
+            </li>
+        </ul>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© <a href="#" class="hover:underline">Craigslist™</a>. All Rights Reserved.
+    </span>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
