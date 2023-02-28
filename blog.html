@@ -10,17 +10,25 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-<!-- top nav bar-->
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-    <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#" class="flex items-center">
-            <img src="https://1000logos.net/wp-content/uploads/2020/11/Craigslist-emblem-500x313.jpg" class="h-6 mr-3 sm:h-9" alt="Craigslist Logo" />
-            <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Craigslist</span>
+<!-- start of header -->
+<header>
+    <div
+        class="bg-white dark:bg-gray-900 w-full sm:flex sm:items-center sm:justify-between">
+        <a href="index.html" class="flex items-center">
+            <img
+                src="https://1000logos.net/wp-content/uploads/2020/11/Craigslist-emblem-500x313.jpg"
+                class="h-6 mr-3 sm:h-9" alt="Craigslist Logo" />
+            <span
+                class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Craigslist</span>
         </a>
-        <div class="hidden w-full md:block md:w-auto" id="navbar">
-            <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div
+            class="hidden w-full md:block md:w-auto"
+            id="navbar">
+            <ul
+                class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                    <button class="rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0" >Create Posting</button>
+                    <button
+                        class="rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0" >Create Posting</button>
                 </li>
                 <li>
                     <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  md:dark:hover:text-white dark:hover:bg-gray-700">Login</a>
@@ -34,4 +42,140 @@
             </ul>
         </div>
     </div>
-</nav>
+</header>
+<!-- end of header -->
+<!-- main section begins -->
+<main>
+    <!-- section one -->
+    <div class="flex bg-white border-purple-800 border-4 rounded-lg mb-6 ml-10 mr-10">
+        <div  x-data="{open: true}">
+            <a @click="open = !open">
+            <img
+                x-show="open"
+                 class="tile--img__img  js-lazyload"
+                 src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7OU1o4FdmpJp2ntRZyiEAAHaE8%26pid%3DApi&amp;
+                 f=1&amp;
+                 ipt=b89b68ad5c96cac6d224d95f4c076a24fb8c93d1cd0f7823c6052d721ca76604&amp;ipo=images"
+                 data-src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7OU1o4FdmpJp2ntRZyiEAAHaE8%26pid%3DApi&amp;
+                 f=1&amp;ipt=b89b68ad5c96cac6d224d95f4c076a24fb8c93d1cd0f7823c6052d721ca76604&amp;
+                 ipo=images"
+                 alt="Bitcoin Has Reached Adulthood Now, No Wonder It Rallied Past $8k, Says ...">
+            <img
+                x-show="!open"
+                 class="tile--img__img  js-lazyload"
+                 src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.NxBs-BgX_5DBlFgbIvinFAHaE8%26pid%3DApi&amp;f=1&amp;
+                 ipt=44244585140af33220e26ce4197c6c2cbd31199df5ebfd6c1dc1a1a899145346&amp;ipo=images"
+                 data-src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.NxBs-BgX_5DBlFgbIvinFAHaE8%26pid%3DApi&amp;
+                 f=1&amp;ipt=44244585140af33220e26ce4197c6c2cbd31199df5ebfd6c1dc1a1a899145346&amp;ipo=images"
+                 alt="Buy Bitcoin Securely - The Best Asset Class of 2020 - Coindoo">
+            </a>
+    </div>
+        <div>
+            <h1 class="font-semibold text-3xl ml-3">Bitcoin is an innovative payment network and a new kind of money.</h1>
+            
+            <p>The bitcoin price rocketed over the last two months,
+                climbing alongside stock markets, with bitcoin,
+                ethereum and other major cryptocurrencies adding
+                $200 billion and fueled by rising expectations Federal Reserve
+                could be about to pivot from its program of interest rate hikes.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+            </svg>
+    
+            <button class="box-border rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0 ml-3">Buy Category</button>
+        </div>
+    </div>
+    <!-- section two -->
+    <div class="flex bg-white border-purple-800 border-4 rounded-lg ml-10 mr-10">
+        <img
+            srcset="https://cdn.pixabay.com/photo/2019/05/17/18/32/flower-4210320_960_720.jpg 1x,
+        https://cdn.pixabay.com/photo/2019/05/17/18/32/flower-4210320_1280.jpg 2x"
+            src="https://cdn.pixabay.com/photo/2019/05/17/18/32/flower-4210320_960_720.jpg"
+            alt="Free Flower Blossom photo and picture"
+            width="171.4"
+            height="204"
+            style="height: auto"
+            title="Download free HD stock image of Flower Blossom">
+        <div>
+            <h1 class="font-semibold text-3xl ml-3">Garden Club Join Team Green Thumbs.</h1>
+            
+            <p>
+                Garden Clubs National garden clubs provide numerous resources for your garden.
+                Find both national and regional chapters using the list below.
+                National Clubs National Garden Clubs,
+                Inc Provides education, resources and national networking opportunities
+                for its members to promote the love of gardening.
+                Read More The Garden Club of America.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+            </svg>
+    
+            <a href="community.html">
+                <button class="rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0 ml-3">Community Page</button>
+            </a>
+            
+
+        </div>
+    </div>
+    <!-- section three -->
+    <div class="flex bg-white border-purple-800 border-4 rounded-lg mt-6 ml-10 mr-10">
+        <img class="tile--img__img  js-lazyload"
+             src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W525P8jzhEwACHrAyJ4WIAHaEK%26pid%3DApi&amp;
+             f=1&amp;ipt=dc259e768b9d5d708018d8d177dfdc9315ac62e843addb7712b7d8c517d36111&amp;
+             ipo=images" data-src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W525P8jzhEwACHrAyJ4WIAHaEK%26pid%3DApi&amp;
+             f=1&amp;ipt=dc259e768b9d5d708018d8d177dfdc9315ac62e843addb7712b7d8c517d36111&amp;ipo=images"
+             alt="Back-End Developer atau Full Stack Developer, yang Lebih Menjanjikan?">
+        <div>
+            <h1 class="font-semibold text-3xl ml-3">Backend Web Development Org.</h1>
+            
+            <p>The best way to start working on a back end tech stack is to have everything
+                together on a single server - the code of your application,
+                the reverse proxy servers, the database, etc.
+                Then as you become more proficient in each thing, you can decouple it from the existing business logic.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+            </svg>
+    
+    
+            <button class="rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0 ml-3">Join Team</button>
+        </div>
+    </div>
+</main>
+<!-- main section ends -->
+<!-- footer starts -->
+<footer>
+    <div
+        class="bg-white dark:bg-gray-900 fixed bottom-0 w-full sm:flex sm:items-center sm:justify-between">
+        <a href="#" class="flex items-center">
+            <img
+                src="https://1000logos.net/wp-content/uploads/2020/11/Craigslist-emblem-500x313.jpg"
+                class="h-6 mr-3 sm:h-9" alt="Craigslist Logo" />
+            <span
+                class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Craigslist</span>
+        </a>
+        <ul
+            class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400 pl-3">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Feedback</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Privacy</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">Settings</a>
+            </li>
+            <li>
+                <a href="#" class="hover:underline">Terms</a>
+            </li>
+        </ul>
+        <hr
+            class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span
+            class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+          <a href="#" class="hover:underline">Craigslist™</a>. All Rights Reserved.
+        </span>
+    </div>
+</footer>
+<!-- footer ends -->
+</body>
+</html>
