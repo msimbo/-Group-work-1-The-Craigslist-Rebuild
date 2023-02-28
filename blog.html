@@ -48,14 +48,28 @@
 <main>
     <!-- section one -->
     <div class="flex bg-white border-purple-800 border-4 rounded-lg mb-6 ml-10 mr-10">
-        <img class="tile--img__img  js-lazyload"
-             src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7OU1o4FdmpJp2ntRZyiEAAHaE8%26pid%3DApi&amp;
-             f=1&amp;
-             ipt=b89b68ad5c96cac6d224d95f4c076a24fb8c93d1cd0f7823c6052d721ca76604&amp;ipo=images"
-             data-src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7OU1o4FdmpJp2ntRZyiEAAHaE8%26pid%3DApi&amp;
-             f=1&amp;ipt=b89b68ad5c96cac6d224d95f4c076a24fb8c93d1cd0f7823c6052d721ca76604&amp;
-             ipo=images"
-             alt="Bitcoin Has Reached Adulthood Now, No Wonder It Rallied Past $8k, Says ...">
+        <div  x-data="{open: true}">
+            <a @click="open = !open">
+            <img
+                x-show="open"
+                 class="tile--img__img  js-lazyload"
+                 src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7OU1o4FdmpJp2ntRZyiEAAHaE8%26pid%3DApi&amp;
+                 f=1&amp;
+                 ipt=b89b68ad5c96cac6d224d95f4c076a24fb8c93d1cd0f7823c6052d721ca76604&amp;ipo=images"
+                 data-src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.7OU1o4FdmpJp2ntRZyiEAAHaE8%26pid%3DApi&amp;
+                 f=1&amp;ipt=b89b68ad5c96cac6d224d95f4c076a24fb8c93d1cd0f7823c6052d721ca76604&amp;
+                 ipo=images"
+                 alt="Bitcoin Has Reached Adulthood Now, No Wonder It Rallied Past $8k, Says ...">
+            <img
+                x-show="!open"
+                 class="tile--img__img  js-lazyload"
+                 src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.NxBs-BgX_5DBlFgbIvinFAHaE8%26pid%3DApi&amp;f=1&amp;
+                 ipt=44244585140af33220e26ce4197c6c2cbd31199df5ebfd6c1dc1a1a899145346&amp;ipo=images"
+                 data-src="//external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.NxBs-BgX_5DBlFgbIvinFAHaE8%26pid%3DApi&amp;
+                 f=1&amp;ipt=44244585140af33220e26ce4197c6c2cbd31199df5ebfd6c1dc1a1a899145346&amp;ipo=images"
+                 alt="Buy Bitcoin Securely - The Best Asset Class of 2020 - Coindoo">
+            </a>
+    </div>
         <div>
             <h1 class="font-semibold text-3xl ml-3">Bitcoin is an innovative payment network and a new kind of money.</h1>
             
@@ -68,8 +82,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
             </svg>
     
-    
-            <button x-data="{open: false}" class="box-border rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0 ml-3">Buy Category</button>
+            <button class="box-border rounded-full py-2 pl-3 pr-4 text-white bg-blue-700 w-32 h-9 md:text-white md:p-0 ml-3">Buy Category</button>
         </div>
     </div>
     <!-- section two -->
